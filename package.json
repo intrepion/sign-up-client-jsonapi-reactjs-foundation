@@ -18,6 +18,10 @@
   "homepage": "https://github.com/intrepion/sign-up-client-jsonapi-reactjs-foundation#readme",
   "devDependencies": {
     "babel-core": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "jsdom": "^8.0.2",
     "mocha": "^2.4.5"
   }
 }
