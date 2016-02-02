@@ -1,0 +1,23 @@
+{
+  "name": "sign-up-client-jsonapi-reactjs-foundation",
+  "version": "1.0.0",
+  "description": "JSON API client written with ReactJS and Foundation for a boilerplate app that simply lets you sign up",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha --recursive --compilers js:babel-core/register --require ./test/setup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intrepion/sign-up-client-jsonapi-reactjs-foundation.git"
+  },
+  "author": "Oliver Forral",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/intrepion/sign-up-client-jsonapi-reactjs-foundation/issues"
+  },
+  "homepage": "https://github.com/intrepion/sign-up-client-jsonapi-reactjs-foundation#readme",
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "mocha": "^2.4.5"
+  }
+}
