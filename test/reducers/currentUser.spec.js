@@ -19,4 +19,18 @@ describe('currentUser reducer', () => {
       currentUser(oldState, action)
     ).toEqual(newState);
   });
+  it('should handle signing in', () => {
+    const oldState = undefined;
+    const action = {
+      type: USER_LOAD,
+      username: 'username',
+    };
+    deepFreeze(action);
+    const newState = {
+      username: 'username',
+    };
+    expect(
+      currentUser(oldState, action)
+    ).toEqual(newState);
+  });
 });
