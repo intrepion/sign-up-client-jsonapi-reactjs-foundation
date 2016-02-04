@@ -1,5 +1,6 @@
 import {
   USER_LOAD,
+  USER_UNLOAD,
 } from '../constants/actionTypes';
 
 const initialState = {
@@ -12,6 +13,11 @@ export default (state = initialState, action) => {
       return {
         ...state,
         username: action.username,
+      };
+    case USER_UNLOAD:
+      return {
+        ...state,
+        username: undefined,
       };
     default:
       return state;
