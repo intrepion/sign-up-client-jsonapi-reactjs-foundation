@@ -1,10 +1,12 @@
 import {
   USER_LOAD,
+  USER_SIGN_IN_REQUEST,
   USER_UNLOAD,
 } from '../constants/actionTypes';
 
 const initialState = {
   username: undefined,
+  requestingSignIn: false,
 };
 
 export default (state = initialState, action) => {
@@ -13,7 +15,13 @@ export default (state = initialState, action) => {
       return {
         ...state,
         username: action.username,
+        requestingSignIn: false,
       };
+    case USER_SIGN_IN_REQUEST:
+      return {
+        ...state,
+        requestingSignIn: true,
+      }
     case USER_UNLOAD:
       return {
         ...state,
