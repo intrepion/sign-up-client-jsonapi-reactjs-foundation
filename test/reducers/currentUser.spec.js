@@ -1,11 +1,7 @@
 import expect from 'expect';
 import deepFreeze from 'deep-freeze';
 import currentUser from '../../reducers/currentUser';
-import {
-  USER_LOAD,
-  USER_SIGN_IN_REQUEST,
-  USER_UNLOAD,
-} from '../../constants/actionTypes';
+import * as actions from '../../actions';
 
 describe('currentUser reducer', () => {
   it('should handle initial state', () => {
@@ -28,7 +24,7 @@ describe('currentUser reducer', () => {
       requestingSignIn: true,
     };
     const action = {
-      type: USER_LOAD,
+      type: actions.USER_LOAD,
       username: 'username',
     };
     deepFreeze(oldState);
@@ -47,7 +43,7 @@ describe('currentUser reducer', () => {
       requestingSignIn: false,
     };
     const action = {
-      type: USER_UNLOAD,
+      type: actions.USER_UNLOAD,
     };
     deepFreeze(oldState);
     deepFreeze(action);
@@ -65,7 +61,7 @@ describe('currentUser reducer', () => {
       requestingSignIn: false,
     };
     const action = {
-      type: USER_SIGN_IN_REQUEST,
+      type: actions.SIGN_IN_REQUEST,
     };
     deepFreeze(oldState);
     deepFreeze(action);

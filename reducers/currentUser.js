@@ -1,8 +1,4 @@
-import {
-  USER_LOAD,
-  USER_SIGN_IN_REQUEST,
-  USER_UNLOAD,
-} from '../constants/actionTypes';
+import * as actions from '../actions';
 
 const initialState = {
   username: undefined,
@@ -11,18 +7,18 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case USER_LOAD:
+    case actions.SIGN_IN_REQUEST:
+      return {
+        ...state,
+        requestingSignIn: true,
+      }
+    case actions.USER_LOAD:
       return {
         ...state,
         username: action.username,
         requestingSignIn: false,
       };
-    case USER_SIGN_IN_REQUEST:
-      return {
-        ...state,
-        requestingSignIn: true,
-      }
-    case USER_UNLOAD:
+    case actions.USER_UNLOAD:
       return {
         ...state,
         username: undefined,
