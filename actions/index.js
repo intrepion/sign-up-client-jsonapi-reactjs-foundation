@@ -11,10 +11,10 @@ export function signIn() {
   };
 }
 
-export function signInSuccess(cart) {
+export function signInSuccess(username) {
   return {
     type: SIGN_IN_SUCCESS,
-    cart,
+    username,
   };
 }
 
