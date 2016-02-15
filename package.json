@@ -26,9 +26,11 @@
     "deep-freeze": "0.0.1",
     "expect": "^1.14.0",
     "jsdom": "^8.0.2",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.7"
   },
   "dependencies": {
+    "react": "^0.14.7",
     "redux-saga": "^0.6.1"
   }
 }
