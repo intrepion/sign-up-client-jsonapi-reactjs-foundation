@@ -17,10 +17,21 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {
-    loaders: [{
-      test: /\.js$/,
-      loaders: ['react-hot', 'babel'],
-      exclude: /node_modules/
-    }]
+    loaders: [
+      {
+        test: /\.js$/,
+        loaders: ['react-hot', 'babel'],
+        exclude: /node_modules/
+      },
+      {
+        test: /\.png$/,
+        loaders: ['url-loader'],
+        query: {
+          limit: 8192,
+          mimetype: 'image/png'
+        },
+        exclude: /node_modules/
+      }
+    ]
   }
 };

@@ -1,0 +1,15 @@
+body {
+  background-color: #cfcfcf;
+}
+
+footer div {
+  background-color: #5a5a5a;
+}
+
+.footer-item, footer a {
+  color: #ffffff;
+}
+
+.content {
+  background-color: #ffffff;
+}
