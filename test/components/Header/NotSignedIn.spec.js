@@ -1,7 +1,7 @@
 import expect from 'expect';
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
-import NotSignedIn from '../../components/NotSignedIn';
+import NotSignedIn from '../../../components/Header/NotSignedIn';
 
 function setup() {
   let props = {

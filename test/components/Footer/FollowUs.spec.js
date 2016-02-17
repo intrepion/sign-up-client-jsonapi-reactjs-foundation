@@ -1,7 +1,7 @@
 import expect from 'expect';
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
-import FollowUs from '../../components/FollowUs';
+import FollowUs from '../../../components/Footer/FollowUs';
 
 function setup() {
   let props = {

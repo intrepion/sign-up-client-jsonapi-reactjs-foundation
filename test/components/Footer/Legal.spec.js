@@ -1,7 +1,7 @@
 import expect from 'expect';
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
-import Legal from '../../components/Legal';
+import Legal from '../../../components/Footer/Legal';
 
 function setup() {
   let props = {

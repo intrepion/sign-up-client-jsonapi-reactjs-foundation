@@ -1,7 +1,7 @@
 import expect from 'expect';
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
-import Logo from '../../components/Logo';
+import Logo from '../../../components/Header/Logo';
 
 function setup() {
   let props = {
