@@ -1,13 +1,14 @@
 import React, { PropTypes, Component } from 'react';
+import { Link } from 'react-router';
 
 const src = '../images/logo-small.png';
 
 class Logo extends Component {
   render() {
     return (
-      <a href=''>
+      <Link to='/'>
         <img src={src} />
-      </a>
+      </Link>
     );
   }
 }

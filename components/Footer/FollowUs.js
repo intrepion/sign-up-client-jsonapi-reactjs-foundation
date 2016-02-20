@@ -5,11 +5,11 @@ class FollowUs extends Component {
     return (
       <ul className='menu'>
         <li><span className="footer-item">Follow Us:</span></li>
-        <li><a href=''><span className='fi-social-twitter'></span></a></li>
-        <li><a href=''><span className='fi-social-facebook'></span></a></li>
-        <li><a href=''><span className='fi-social-youtube'></span></a></li>
-        <li><a href=''><span className='fi-social-instagram'></span></a></li>
-        <li><a href=''><span className='fi-social-pinterest'></span></a></li>
+        <li><a href='#'><span className='fi-social-twitter'></span></a></li>
+        <li><a href='#'><span className='fi-social-facebook'></span></a></li>
+        <li><a href='#'><span className='fi-social-youtube'></span></a></li>
+        <li><a href='#'><span className='fi-social-instagram'></span></a></li>
+        <li><a href='#'><span className='fi-social-pinterest'></span></a></li>
       </ul>
     );
   }

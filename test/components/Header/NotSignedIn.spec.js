@@ -28,11 +28,9 @@ describe('NotSignedIn component', () => {
     let [ li1, li2 ] = output.props.children;
 
     expect(li1.type).toBe('li');
-    expect(li1.props.children.type).toBe('a');
     expect(li1.props.children.props.children).toBe('Sign In');
 
     expect(li2.type).toBe('li');
-    expect(li2.props.children.type).toBe('a');
     expect(li2.props.children.props.className).toBe('button');
     expect(li2.props.children.props.children).toBe('Sign Up');
   });

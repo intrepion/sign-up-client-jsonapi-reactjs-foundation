@@ -28,11 +28,9 @@ describe('Legal component', () => {
     let [ li1, li2, li3 ] = output.props.children;
 
     expect(li1.type).toBe('li');
-    expect(li1.props.children.type).toBe('a');
     expect(li1.props.children.props.children).toBe('Terms');
 
     expect(li2.type).toBe('li');
-    expect(li2.props.children.type).toBe('a');
     expect(li2.props.children.props.children).toBe('Privacy');
 
     expect(li3.type).toBe('li');
